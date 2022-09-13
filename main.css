@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url("images/linear-world-map-creative-world-map-concept-art-world-map-on-black-background.jpg") no-repeat center center;
+    background-size: cover;
+    /* backdrop-filter: blur(1px); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+#info {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#title {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+#sub {
+    font-size:26px;
+    margin-bottom: 200px;
+}
+
+#start {
+    background-color: #848484;
+    color: #ffffff;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 4px 10px 2px #000000;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: #6e6e6e;
+}
+
+#country {
+    position: absolute;
+    right: 0;
+    margin: 30px;
+    height: 30px;
+    display: flex;
+}
+
+#coun {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 15px;
+    color: white;
+}
+
+#open_i {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#menu {
+    margin-bottom: 1px;
+}
+
+#close_i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: 1px 2px 10px 0px;
+    cursor: pointer;
+}
+
+#flags_i {
+    position: absolute;
+    right: 0;
+    background-color: rgb(215, 215, 215);
+    width: 25%;
+    color: black;
+    padding: 40px;
+    height: 665px;
+    text-align: center;
+    transition: 0.6s;
+    overflow-y: scroll;
+    display: none;
+}
+
+#information {
+    margin-top: 40px;
+}
+
+.flag_info {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+.country_flag {
+    width: 80px;
+    box-shadow: 1px 3px 13px 1px;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar {
+   width: 12px;
+}
+
+@media (max-width: 600px) {
+    #flags {
+        width: 50%;
+    }
+}
