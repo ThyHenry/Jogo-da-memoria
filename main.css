@@ -16,9 +16,12 @@ body {
 }
 
 #info {
+    position: relative;
     text-align: center;
     margin-top: 80px;
-    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #title {
@@ -98,6 +101,7 @@ body {
 
 #flags_i {
     position: absolute;
+    position: fixed;
     right: 0;
     background-color: rgb(215, 215, 215);
     width: 25%;
@@ -131,8 +135,60 @@ body {
    width: 12px;
 }
 
+#cred {
+    position: relative;
+    bottom: 0;
+    background: #848484;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+#class {
+    padding-bottom: 15px;
+}
+
+#flex {
+    display: flex;
+}
+
+#people {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#repo {
+    display : inline-block;
+    margin-left: 80px;
+   margin-top: 20px;
+}
+
+#github {
+    color: white;
+}
+
+#social {
+    margin-bottom: 10px;
+}
+
 @media (max-width: 600px) {
     #flags_i {
+        width: 50%;
+    }
+}
+
+@media (max-width: 320px) {
+
+    #flex {
+        flex-direction: column;
+    }
+
+    #repo{ 
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #cred {
         width: 50%;
     }
 }
